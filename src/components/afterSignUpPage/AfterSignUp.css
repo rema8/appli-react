@@ -1,0 +1,107 @@
+/* Conteneur principal */
+.page-container {
+  background-color: #ccc; /* Fond gris */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* En-tête avec logo et icônes */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5; /* Bande en haut avec fond clair */
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour l'en-tête */
+}
+
+/* Logo à gauche */
+.header-bar .logo {
+  width: 150px;
+}
+
+/* Conteneur des icônes */
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Icônes (publication et profil) */
+.icons-container .icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Texte à côté de l'icône de publication */
+.publish-text {
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Contenu sous l'en-tête avec image de fond */
+.content-container {
+  flex-grow: 1;
+  background-image: url('../../assets/fond.png');
+  background-size: cover;
+  background-position: center;
+ padding-top: 80px; /* Espace pour éviter que le contenu passe sous l'en-tête */
+
+}
+
+/* Texte d'introduction */
+.intro-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Formulaire de recherche */
+.search-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Bouton de recherche */
+.search-button {
+  background-color: #FF6F20;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body, .App {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .homepage-container {
+    background-image: url('../../assets/image.webp'); /* Ton image de fond */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    height: 80px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .login-button, .signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover, .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
